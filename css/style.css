@@ -1,0 +1,297 @@
+@charset "UTF-8";
+/* ref http://toastytech.com/guis/win98desk.png */
+/* == REUSABLE STYLES == */
+/* background */
+/* border grey */
+/* lighter border grey */
+.borders-gw, .borders2, .start:active, section header span.actions button:active, textarea, input, .noborders:active, section nav div button:active, section footer span {
+  border-top: 1px solid #7B7B7B;
+  border-left: 1px solid #7B7B7B;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
+}
+
+.borders-wg, .noborders:hover, section nav div button:hover, .withgrip:before, section {
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 1px solid #7B7B7B;
+  border-right: 1px solid #7B7B7B;
+}
+
+.borders2, .start:active, section header span.actions button:active, textarea, input {
+  box-shadow: inset -1px -1px #DEDEDE, inset 1px 1px black;
+}
+
+.borders3, .start, .taskslist div, section header span.actions button {
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  box-shadow: inset -1px -1px #7B7B7B, inset 1px 1px #DEDEDE;
+}
+
+.noborders, section nav div button {
+  border: 1px solid transparent;
+  box-sizing: content-box;
+}
+
+.withgrip:before {
+  display: inline-block;
+  width: 1px;
+  height: calc(100% - 6px);
+  margin: 2px 2px;
+  content: "";
+}
+.wow {
+  border-top: 5px solid transparent;
+  top: 30px;
+}
+
+/* == TEXT SELECTION COLORING == */
+::-moz-selection {
+  background: navy;
+  color: white;
+}
+::selection {
+  background: navy;
+  color: white;
+}
+
+/* == MAIN == */
+body {
+  /* background: teal; */
+  /* background: #ffc76d; */
+  /* background: #ff87d1; */
+  /* background: linear-gradient(#ffc76d, #ff6db6, #7e42f7); */
+  /* background-image: linear-gradient(#ffc76d, #ff6db6, #7e42f7); */
+  font-size: 8pt;
+  line-height: 8pt;
+  font-family: Microsoft Sans Serif, Arial, sans-serif;
+}
+
+/* == TASKBAR == */
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  height: 22px;
+  padding: 2px;
+  width: 100%;
+  border-top: 1px solid white;
+  background: #BDBDBD;
+  z-index: 10;
+}
+
+.start {
+  height: 100%;
+  font-weight: bold;
+}
+
+.taskbar > div {
+  display: inline-block;
+}
+
+.taskslist div {
+  display: inline-block;
+}
+
+/* == WINDOWS == */
+section {
+  position: fixed;
+  padding: 2px;
+  background: #BDBDBD;
+  resize: both;
+  overflow: hidden;
+  /* ✌ */
+}
+
+/* == TITLE BAR == */
+section header {
+  background: linear-gradient(to right, #00007B, #0884CE);
+  height: 18px;
+  line-height: 19px;
+  color: white;
+  font-weight: bold;
+  text-indent: 21px;
+}
+section header span.icon {
+  content: "";
+  background-image: url("https://vignette3.wikia.nocookie.net/tamagotchi/images/f/fc/Mametchi_sprite_SNES.png");
+  margin: 1px 1px 1px 2px;
+  display: block;
+  position: absolute;
+  height: 16px;
+  width: 16px;
+}
+section header span.icon span {
+  display: none;
+}
+section header span.icon:hover span {
+  /* display:block; */
+  /* span unimplemented menu */
+}
+section header span.actions {
+  float: right;
+  font-family: Marlett;
+  font-weight: normal;
+  color: black;
+  line-height: 10px;
+  margin-right: 2px;
+}
+section header span.actions button {
+  padding: 1px 2px;
+  margin: 2px 0;
+  /* to do: have icons properly shift along */
+}
+section header span.actions button.nosp {
+  margin-left: -3px;
+}
+
+/* == NAVIGATION BAR THING == */
+section nav {
+  background: #BDBDBD;
+  margin: 1px 0 2px 0;
+  /* 2px 'cos of box-shadow stuff */
+  padding: 1px 1px 0 1px;
+  border: 1px solid #7B7B7B;
+  box-shadow: 0px 1px white, 1px 1px white, 1px 0px white, inset 1px 1px white;
+}
+section nav div {
+  height: 22px;
+}
+section nav div button {
+  height: 19px;
+  margin: auto -1px;
+  /* countermeasure for unwanted spaces between elements */
+}
+section nav div span {
+  line-height: 24px;
+  margin: auto 4px;
+}
+section nav navrule {
+  border-top: 1px solid #7B7B7B;
+  border-bottom: 1px solid white;
+  width: calc(100% + 1px);
+  /* it wasn't touching the right border right */
+}
+
+/* == STATUS BAR == */
+section footer {
+  margin: 1px -1px 0px -1px;
+}
+section footer span {
+  height: 16px;
+  line-height: 18px;
+  padding: 0 2px;
+  margin: 0 1px;
+}
+
+/* == TEXT FIELD AREA INPUT THING == */
+textarea {
+  resize: none;
+  /* no awkward grip things */
+  background: white;
+  padding: 4px;
+  margin: 1px 0 1px 0;
+}
+
+/* == TEXT INPUT BAR == */
+input {
+  margin-right: 4px;
+  padding: 0 4px;
+}
+
+/* == BUTTONS == */
+button {
+  background: #BDBDBD;
+  padding: auto 7px;
+}
+
+/* == MISCELLANEOUS SHIT == */
+section[lang='ja'] {
+  font-size: 9pt;
+  line-height: 9pt;
+  font-family: MS UI Gothic, sans-serif;
+}
+section[lang='ja'] header {
+  font-weight: normal;
+  /* no bold title */
+}
+section[lang='ja'] nav div button {
+  margin: auto -2px;
+}
+
+section:hover {
+  z-index: 99;
+}
+
+/* :focus doesn't work for me (?) */
+/* == ALL THE FLEX MUMBO JUMBO == */
+.fd-stack, section, section nav {
+  display: flex;
+  flex-direction: column;
+}
+
+.fd-side, section nav div.flexcontainer, section footer, .taskbar {
+  display: flex;
+  flex-direction: row;
+}
+
+section nav div.flexcontainer input {
+  flex: 1;
+}
+
+section iframe {
+  flex: 1;
+}
+
+section footer span {
+  flex: 1;
+}
+
+textarea {
+  flex: 1;
+  /* take up all the sideical space */
+}
+
+.taskbar .taskslist {
+  flex: 1;
+}
+
+/* == SIN == */
+section.notepad {
+  width: 500px;
+  height: 300px;
+  left: 50px;
+  top: 30px;
+}
+
+section.notepad2 {
+  width: 500px;
+  height: 300px;
+  left: 600px;
+  top: 30px;
+}
+
+section.test {
+  width: 500px;
+  height: 300px;
+  left: 150px;
+  top: 140px;
+}
+section.test nav img {
+  width: 16px;
+  height: 16px;
+  margin: auto;
+  cursor: pointer;
+}
+.fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  background-image: linear-gradient(#ffc76d, #ff6db6, #7e42f7);
+  /* background-image: linear-gradient(#7e42f7, #ff6db6, #ffc76d); */
+
+}
