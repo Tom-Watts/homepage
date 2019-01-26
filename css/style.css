@@ -259,17 +259,17 @@ textarea {
 
 /* == SIN == */
 section.untitled {
-  width: 500px;
-  height: 300px;
-  left: 150px;
-  top: 110px;
+  width: 600px;
+  height: 340px;
+  left: 90px;
+  top: 60px;
 }
 
 section.news {
   width: 500px;
   height: 270px;
-  left: 690px;
-  top: 50px;
+  left: 290px;
+  top: 20px;
 }
 
 
