@@ -258,26 +258,46 @@ textarea {
 }
 
 /* == SIN == */
-section.notepad {
-  width: 500px;
-  height: 300px;
-  left: 50px;
-  top: 30px;
-}
-
-section.notepad2 {
-  width: 500px;
-  height: 300px;
-  left: 600px;
-  top: 30px;
-}
-
-section.test {
+section.untitled {
   width: 500px;
   height: 300px;
   left: 150px;
-  top: 140px;
+  top: 110px;
 }
+
+section.news {
+  width: 500px;
+  height: 270px;
+  left: 690px;
+  top: 50px;
+}
+
+
+section.contact {
+  width: 500px;
+  height: 300px;
+  left: 300px;
+  top: 200px;
+}
+
+
+
+.icons1 {
+text-decoration: none;
+  left: 30px;
+  top: 30px;
+  position: fixed;
+}
+
+
+.icons2 {
+text-decoration: none;
+  left: 90px;
+  top: 30px;
+  position: fixed;
+}
+
+
 section.test nav img {
   width: 16px;
   height: 16px;
