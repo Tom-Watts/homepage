@@ -106,21 +106,22 @@ section {
 
 /* == TITLE BAR == */
 section header {
-  background: linear-gradient(to right, #00007B, #0884CE);
+  background: linear-gradient(to right, #9842f4, #ff75b3, #ffb547);
+  /* background: linear-gradient(to right, #00007B, #0884CE); */
   height: 18px;
   line-height: 19px;
   color: white;
   font-weight: bold;
-  text-indent: 21px;
+  text-indent: 5px;
 }
 section header span.icon {
   content: "";
-  background-image: url("https://vignette3.wikia.nocookie.net/tamagotchi/images/f/fc/Mametchi_sprite_SNES.png");
+  /* background-image: url("https://vignette3.wikia.nocookie.net/tamagotchi/images/f/fc/Mametchi_sprite_SNES.png"); */
   margin: 1px 1px 1px 2px;
   display: block;
   position: absolute;
-  height: 16px;
-  width: 16px;
+  height: 1px;
+  width: 1px;
 }
 section header span.icon span {
   display: none;
@@ -259,16 +260,16 @@ textarea {
 
 /* == SIN == */
 section.untitled {
-  width: 600px;
-  height: 340px;
-  left: 90px;
+  width: 550px;
+  height: 270px;
+  left: 130px;
   top: 60px;
 }
 
 section.news {
-  width: 500px;
-  height: 270px;
-  left: 290px;
+  width: 693px;
+  height: 390px;
+  left: 263px;
   top: 20px;
 }
 
