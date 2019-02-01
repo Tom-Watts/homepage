@@ -1,152 +1,90 @@
+
 <!DOCTYPE html>
-<html lang="en" >
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Tom Watts</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="icon" href="cd.png">
+<link rel="icon" href="cd.png">
+<title>Tom Watts</title>
 
 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.95;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("wow.png");
+  height: 100%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  border-radius: 33px;
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 15px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #111;
+}
+
+.top {
+  padding-left: 10px;
+  background-color: #111;
+  color: #fff;
+  text-decoration: none;
+}
+
+a {
+  color: #eee;
+  text-decoration: none;
+}
+
+</style>
 </head>
-
-
-
-
-<div class="fullscreen">
-
-  <div class="icons1">
-  <a href="http://tomwatts.co.nz" style="text-decoration: none; color:#000;">
-  <img src="computer3.png"> <br>
-  home </a>
-
-  <br> <br> <br>
-
-
-
-  <a href="http://github.com/Tom-Watts" style="text-decoration: none; color:#000;">
-  <img src="defrag.png"> <br>
-  github </a>
-
-<br> <br> <br>
-
-<a href="mailto:tom@tomwatts.co.nz" style="text-decoration: none; color:#000;">
-<img src="smiley.png"> <br>
-email </a>
-
-<br> <br> <br>
-
-
-  <a href="http:/tomwatts.co.nz" style="text-decoration: none; color:#000;">
-  <img src="question.png"> <br>
-  about </a>
-
-
-  </div>
-
-  <!-- <div class="icons2">
-  <img src="cd.png"> <br>
-  music
-  <br> <br> <br>
-  </div> -->
-
-
-
-</div>
-
-
-
-
 <body>
 
 
-<main class="desktop">
-
-  <!-- <footer class="taskbar">
-    <button class="start">Start</button>
-      <button class="start">Untitled - Notepad</button>
-      <button class="start">News</button>
-    <div class="taskslist">
+<div class="bgimg-1">
+  <div class="top">
+    <a href="https://github.com/Tom-Watts"> GitHub </a> |
+    <a href="https://twitter.com/zonko-soft"> Twitter </a> |
+    <a href="mailto:tom@tomwatts.co.nz"> Email </a>
     </div>
-    <div class="wow">07:30 PM &nbsp;&nbsp;&nbsp;</div>
-  </footer> -->
 
 
-
-  <section class="untitled">
-    <header><span>Untitled - Notepad</span><span class="actions">
-        </span></header>
-    <nav>
-      <div style="padding-left:3px;">
-        <button>File</button>
-        <button>Edit</button>
-        <button>View</button>
-        <button>Help</button>
-      </div>
-      <!-- <navrule></navrule> -->
-      <!-- <div class="flexcontainer"><span>Address</span>
-        <input placeholder="http:/tomwatts.co.nz"/>
-      </div> -->
-      <navrule></navrule>
-    </nav>
-    <textarea>Page under construction!</textarea>
-    <footer><span></span><span></span><span></span><span style="flex-basis:32px; flex-grow:0;"></span></footer>
-  </section>
-
-
-  <!-- <section class="contact" lang="ja">
-    <header><span class="icon"></span><span>Contact</span></header>
-    <nav>
-      <div style="padding-left:3px;">
-        <button>File</button>
-        <button>Edit</button>
-        <button>View</button>
-        <button>Help</button>
-      </div>
-      <navrule></navrule>
-
-    </nav>
-    <textarea>
-Email: tom@tomwatts.co.nz
-Twitter: twitter.com/zonkosoft
-GitHub: github.com/Tom-Watts
-    </textarea>
-    <footer><span>No files selected</span><span></span><span>69.0GB</span><span style="flex-basis:32px; flex-grow:0;"></span></footer>
-  </section> -->
-
-
-  <section class="news">
-    <header><span class="icon"></span><span>News</span><span class="actions">
-
-        </span></header>
-    <nav>
-      <div style="padding-left:3px;">
-        <button>File</button>
-        <button>Edit</button>
-        <button>View</button>
-        <button>Help</button>
-      </div>
-      <navrule></navrule>
-      <!-- <div class="flexcontainer withgrip">
-        <input placeholder=""/><img src="https://vignette4.wikia.nocookie.net/tamagotchi/images/4/42/Mimitchi_sprite.png" title="i do nothing"/>
-      </div> -->
-    </nav>
-    <textarea>This web site is currently under construction. Please come back later!</textarea>
-    <footer><span></span></footer>
-  </section>
-</main>
-
-
-
-    <script  src="js/index.js"></script>
-
-
+  <div class="caption">
+    <span class="border"><a href="maito:tom@tomwatts.co.nz" style="text-decoration: none; color:#fff;"> tom@tomwatts.co.nz </a>
+    </span><br>
+  </div>
+</div>
 
 
 </body>
-
 </html>
