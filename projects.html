@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Projects</title>
+
+
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Muli'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+<div class="content">
+
+
+  <div class="top">
+    <a href="index.html" > Home </a> |
+    <a href="mailto:tom@tomwatts.co.nz"> Email </a> |
+    <a href="https://twitter.com/zonkosoft"> Twitter </a> |
+    <a href="skills.html"> Skills </a> |
+    <a href="https://github.com/Tom-Watts"> GitHub </a>
+    </div>
+
+  <div id="container">
+<header>
+	<h1>Projects</h1>
+</header>
+
+<main>
+	<h3>Deep Reinforcement Learning for Games</h3>
+	<p>Coming soon!</p>
+	<hr>
+	<h3>Blocky Net: A new method of NeuroEvoluton</h3>
+	<p>
+    NeuroEvolution is the process of evolving the weights, parameters and structures of Neural Networks. Currently the most popular method is called NEAT (NeuroEvolution of Augmenting Topologies).
+    As part of a paid summer research scholarship (funded by Victoria University of Wellington) I was tasked with coming up
+    with a new algorithm which can work well in high dimensional domains (such as Computer Vision and Genomics). Currently NEAT struggles in high dimensional areas. Initially I experimted using backpropagation with PyTorch as a local seach method for the weights of the networks, however I soon found finding the correct structure (or topology) is as important as learning weights. I then introduced a method which uses mutual information for selecting inputs, and forming new nodes. Despite offering some improvements, these methods were still quite slow, particularly with higher dimensional input spaces. <br> <br>
+  Blocky Net: Is a totally new method of NeuroEvolution, where the types of hidden nodes (ReLU, Sigmoid, Tanh and so on ), weights, and connections between layers are rapidly optimized. This method is designed to overcome typical problems in NEAT such as bloated topologies, and slow learning time. The method generally outperforms NEAT in most high dimensional domains (using Minst, NLP, Genomics and Mass Spectronomy datasets). It also has embedded feature selection, and since the networks are generally compact, they are relatively easy to intepret compared to standard Neural Networks. <br> <br>
+  <a href="https://github.com/Tom-Watts/BlockyNet" style="color: #000000"> <b> Final Source Code  </b></a> <br>
+  <a href="https://github.com/Tom-Watts/Neat-Experiments" style="color: #000000"> <b> Messy Experimentation Source Code  </b> </a>
+</p>
+	<hr>
+
+  <h3>Zonko Zonko Game</h3>
+
+
+</main>
+</div>
+
+
+<br>
+</div>
+</body>
+
+</html>
